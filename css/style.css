@@ -1,27 +1,27 @@
-/* 1. TIPOGRAFIA E CONFIGURAÇÕES GERAIS */
+
 body {
-    font-family: 'Roboto', sans-serif; /* Exigência: Google Fonts */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333333;
 }
 
-/* Restrição do layout para 1 única coluna centralizada */
+
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Impede que imagens ultrapassem a tela */
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* 2. HEADER E LOGO */
+
 #cabecalho {
     text-align: center;
     padding: 15px;
@@ -33,7 +33,7 @@ img {
     margin: 0 auto;
 }
 
-/* 3. MENU SANDUÍCHE FIXO NO TOPO */
+
 #menu-navegacao {
     position: sticky; /* Exigência: Fixo no topo */
     top: 0;
@@ -41,12 +41,12 @@ img {
     z-index: 1000;
 }
 
-/* Oculta o checkbox */
+
 #menu-toggle {
     display: none;
 }
 
-/* Botão/Ícone do Sanduíche */
+
 .icone-sanduiche {
     display: block;
     color: #ffffff;
@@ -56,7 +56,7 @@ img {
     text-align: center;
 }
 
-/* Esconde a lista de links por padrão no celular */
+
 .menu-lista {
     list-style: none;
     margin: 0;
@@ -77,12 +77,12 @@ img {
     background-color: #0b3d91;
 }
 
-/* Exibe o menu quando o ícone sanduíche for clicado/marcado */
+
 #menu-toggle:checked ~ .menu-lista {
     display: block;
 }
 
-/* 4. SESSÃO 1 - ESTILOS DOS CONTEÚDOS */
+
 #sessao1 {
     padding-top: 20px;
 }
@@ -92,17 +92,17 @@ img {
     border-radius: 8px;
 }
 
-/* 5. SESSÃO 2 - GALERIA COM FLEXBOX */
+
 .galeria-flex {
-    display: flex; /* Exigência: Flexbox */
-    flex-wrap: wrap; /* Quebra em várias linhas dependendo do tamanho da tela */
+    display: flex; 
+    flex-wrap: wrap; 
     gap: 15px;
     justify-content: center;
     margin-top: 20px;
 }
 
 .galeria-flex img {
-    width: 45%; /* Mostra 2 fotos por linha no desktop */
+    width: 45%; 
     border-radius: 6px;
     object-fit: cover;
 }
@@ -114,7 +114,7 @@ img {
     border-left: 4px solid #0b3d91;
 }
 
-/* 6. RODAPÉ */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -123,9 +123,9 @@ footer {
     margin-top: 40px;
 }
 
-/* 7. RESPONSIVIDADE (MEDIA QUERIES FOR DESKTOP) */
+
 @media (min-width: 768px) {
-    /* Em telas maiores, mostra 4 imagens lado a lado na galeria */
+    
     .galeria-flex img {
         width: 22%;
     }
